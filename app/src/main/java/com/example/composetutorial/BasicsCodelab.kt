@@ -1,5 +1,6 @@
 package com.example.composetutorial
 
+import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Bundle
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.wrapContentSize
@@ -127,6 +128,13 @@ fun OnboardingPreview() {
     }
 }
 
+
+@Preview(
+    showBackground = true,
+    widthDp = 320,
+    uiMode = UI_MODE_NIGHT_YES,
+    name="DefaultPreviewDark"
+)
 @Preview(showBackground = true, widthDp = 400)
 @Composable
 fun DefaultPreview() {
